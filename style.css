@@ -1307,3 +1307,104 @@ footer,
         margin-bottom: 30px;
     }
 }
+
+/* ASTRA VERTEX TECH - DIRECTORS SECTION */
+
+.directors-section {
+    padding: 85px 24px;
+    background: #07111f;
+}
+
+.directors-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.directors-heading h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 15px;
+}
+
+.directors-heading h2 span {
+    color: #00e5ff;
+}
+
+.directors-heading > p:last-child {
+    color: #9aadc2;
+}
+
+.directors-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.director-card {
+    overflow: hidden;
+    background: #101f33;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 14px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.director-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+    box-shadow: 0 12px 30px rgba(0, 229, 255, 0.1);
+}
+
+.director-image {
+    height: 280px;
+    overflow: hidden;
+    background: #13263d;
+}
+
+.director-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.director-info {
+    padding: 25px 20px;
+}
+
+.director-info h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.director-role {
+    color: #00e5ff;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.director-info p:last-child {
+    color: #9aadc2;
+}
+
+@media (max-width: 768px) {
+    .directors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .directors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .director-image {
+        height: 300px;
+    }
+
+    .directors-section {
+        padding: 60px 20px;
+    }
+}
